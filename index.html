@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flappy bird</title>
+	<link rel="stylesheet" href="css/styleSheet.css">
+</head>
+<body>
+	<canvas id="myCanvas" width="432" height="644"></canvas>
+	<script src="js/bird.js"></script>
+	<script src="js/column.js"></script>
+	<script src="js/ground.js"></script>
+	<script src="js/bird.js"></script>
+	<script src="js/main.js"></script>
+
+
+	<script>
+		
+		class Cash {
+			constrouctor(num) {
+				this.yuan = Math.floor(num / 100) + '元'; 
+				this.jiao = Math.floor((num -  this.yuan * 100) / 10) + '角';
+				this.fen = (num - this.yuan - this.jiao) + '分';
+					
+			}
+			add(num) {
+				if(num instanceof Cash){
+					var obj = new Cash(0);
+					obj.yuan = parseInt(this.yuan) + parseInt(num.yuan) + '元';
+					obj.jiao = parseInt(this.jiao) + parseInt(num.jiao) + '元';
+					obj.yuan = parseInt(this.fen) + parseInt(num.fen) + '元';
+					return obj;
+				}
+			}
+			static add(num){
+
+			}
+		}
+
+		function runTasks(options) {
+			
+
+
+		}			
+	</script>
+</body>
+</html>

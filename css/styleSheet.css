@@ -1,0 +1,13 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#myCanvas{
+	width: 432px;
+	height: 644px;
+	box-shadow: -2px -2px 2px #efefef, 5px 5px 5px #b9b9b9;
+	margin-left: 50%;
+	margin-top: 8%;
+	transform: translateX(-50%);
+	background-image: url(../img/background.jpg)
+}
